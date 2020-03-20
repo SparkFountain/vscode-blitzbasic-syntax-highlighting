@@ -1,25 +1,39 @@
 {
-    "name": "blitzbasic",
-    "displayName": "BlitzBasic",
-    "description": "Syntax highlighting for BlitzBasic",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.43.0"
-    },
-    "categories": [
-        "Programming Languages"
+  "name": "blitzbasic",
+  "displayName": "BlitzBasic",
+  "publisher": "sparkfountain",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SparkFountain/vscode-blitzbasic-syntax-highlighting.git"
+  },
+  "description": "Syntax highlighting for BlitzBasic",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.43.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "blitzbasic",
+        "aliases": [
+          "BlitzBasic",
+          "blitzbasic"
+        ],
+        "extensions": [
+          ".bb"
+        ],
+        "configuration": "./language-configuration.json"
+      }
     ],
-    "contributes": {
-        "languages": [{
-            "id": "blitzbasic",
-            "aliases": ["BlitzBasic", "blitzbasic"],
-            "extensions": [".bb"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "blitzbasic",
-            "scopeName": "source.bb",
-            "path": "./syntaxes/blitzbasic.tmLanguage.json"
-        }]
-    }
+    "grammars": [
+      {
+        "language": "blitzbasic",
+        "scopeName": "source.bb",
+        "path": "./syntaxes/blitzbasic.tmLanguage.json"
+      }
+    ]
+  }
 }
