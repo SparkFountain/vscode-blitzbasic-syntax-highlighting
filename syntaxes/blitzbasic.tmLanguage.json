@@ -49,13 +49,7 @@
     "strings": {
       "name": "string.quoted.double.blitzbasic",
       "begin": "\"",
-      "end": "\"",
-      "patterns": [
-        {
-          "name": "constant.character.escape.blitzbasic",
-          "match": "\\\\."
-        }
-      ]
+      "end": "\""
     },
     "numbers": {
       "name": "constant.numeric.blitzbasic",
